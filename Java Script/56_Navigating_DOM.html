@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <div id="nav">
+            <ul>
+                <li>item_1</li>
+                <li>item_2</li>
+                <li>item_3</li>
+                <li>item_4</li>
+                <li>item_5</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        Hello Pilu Pao
+    </div>
+
+    <script>
+
+        let main = document.getElementById('main')
+        console.log(main)
+
+        let xyz = document.getElementsByClassName('container')
+        console.log(xyz)
+
+        let sel = document.querySelector('.container')
+        console.log(sel)
+
+        let selc = document.querySelectorAll('.container')
+        console.log(selc)
+
+        let selct = document.querySelector('#nav>ul>li')
+        console.log(selct)
+    </script>
+</body>
+
+</html>

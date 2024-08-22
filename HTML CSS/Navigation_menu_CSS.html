@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .nav {
+            background-color: #cc0000;
+            border-radius: 9px;
+
+
+        }
+
+        .nav ul {
+            overflow: auto;
+        }
+
+        .nav li {
+            list-style: none;
+            float: left;
+            margin: 20px 9px;
+
+        }
+
+        nav li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            font-size: large;
+
+        }
+
+        nav li a:hover {
+            color: #000000;
+        }
+
+        .nav li input {
+            background-color: rgb(255, 255, 255);
+            padding: 3px 2px;
+        }
+
+        .searchbox {
+            float: right;
+            padding: 7px 40px;
+            margin: 14px 59px;
+
+        }
+
+        .nav ul input {
+            height: 24px;
+            border: 2px solid rgb(168, 168, 168);
+            border-radius: 10px;
+        }
+
+        .button {
+            border: 3px solid white;
+            background-color: #cc0000;
+            padding: 6px 24px;
+            margin: 14px 59px;
+            color: white;
+            
+        }
+
+        .button:hover{
+            background-color: rgb(0, 0, 0);
+    
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li ><a href="https://gurukul.org/admissions/" target="_blank">Home</a></li>
+                <li><a href="#">Parents</a></li>
+                <li><a href="#">Contributors</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="#">Our Branches</a></li>
+                <li><a href="#">Downloads</a></li>
+                <div class="searchbox">
+                    <input type="text" name="search" id="search" placeholder="Search gurukul.org">
+                </div>
+                <div class="applynow">
+                    <button class="button">
+                        Apply Now
+                    </button>
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

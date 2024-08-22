@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #btn {
+            padding: 10px 15px;
+            background-color: beige;
+            color: black;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: rgb(214, 126, 11);
+        }
+    </style>
+</head>
+
+
+
+
+ <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit 
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+
+
+
+
+
+<body>
+    <div class="container">
+        <h1 id="heading" >Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex voluptas et nostrum culpa odio,
+            debitis perspiciatis aliquid a libero reprehenderit sunt tempore quod eaque dolorem magnam quis corporis
+            voluptates voluptatum maiores? Voluptas, non. Tempore aliquam nostrum nesciunt necessitatibus odit ut
+            maiores, nam dicta dolorem esse animi libero corrupti ex? Consequatur ullam facere sapiente porro.lorem52
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio eveniet nostrum sapiente
+            assumenda nobis quam amet iure doloremque asperiores repecere sapiente porro.lorem52 Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Culpa distinctio eveniet nostrum sapiente assumenda nobis quam amet iure
+            doloremque asperiores repellendus eligendi dicta voluptates, itaque enim error unde temporibus quod! Dolorem
+            nullcere sapiente porro.lorem52 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio
+            eveniet nostrum sapiente assumenda nobis quam amet iure doloremque asperiores repellendus eligendi dicta
+            voluptates, itaque enim error unde temporibus quod! Dolorem null llendus eligendi dicta voluptates, itaque
+            enim error unde temporibus quod! Dolorem nulla voluptatem error voluptate eveniet, rerum aliquid
+            consequuntur quidem quam, delectus libero reiciendis.</p>
+
+        <button id="btn" onclick="function_name()">Hide/Show</button>
+        <!-- defineing function on clicking -->
+
+
+    </div>
+    <div class="container">
+        <h1 id="heading" >Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex voluptas et nostrum culpa odio,
+            debitis perspiciatis aliquid a libero reprehenderit sunt tempore quod eaque dolorem magnam quis corporis
+            voluptates voluptatum maiores? Voluptas, non. Tempore aliquam nostrum nesciunt necessitatibus odit ut
+            maiores, nam dicta dolorem esse animi libero corrupti ex? Consequatur ullam facere sapiente porro.lorem52
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio eveniet nostrum sapiente
+            assumenda nobis quam amet iure doloremque asperiores repecere sapiente porro.lorem52 Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Culpa distinctio eveniet nostrum sapiente assumenda nobis quam amet iure
+            doloremque asperiores repellendus eligendi dicta voluptates, itaque enim error unde temporibus quod! Dolorem
+            nullcere sapiente porro.lorem52 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio
+            eveniet nostrum sapiente assumenda nobis quam amet iure doloremque asperiores repellendus eligendi dicta
+            voluptates, itaque enim error unde temporibus quod! Dolorem null llendus eligendi dicta voluptates, itaque
+            enim error unde temporibus quod! Dolorem nulla voluptatem error voluptate eveniet, rerum aliquid
+            consequuntur quidem quam, delectus libero reiciendis.</p>
+
+        <button id="btn" onclick="function_name()">Hide/Show</button>
+        <!-- defineing function on clicking -->
+
+
+    </div>
+    <div class="container">
+        <h1 id="heading" >Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex voluptas et nostrum culpa odio,
+            debitis perspiciatis aliquid a libero reprehenderit sunt tempore quod eaque dolorem magnam quis corporis
+            voluptates voluptatum maiores? Voluptas, non. Tempore aliquam nostrum nesciunt necessitatibus odit ut
+            maiores, nam dicta dolorem esse animi libero corrupti ex? Consequatur ullam facere sapiente porro.lorem52
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio eveniet nostrum sapiente
+            assumenda nobis quam amet iure doloremque asperiores repecere sapiente porro.lorem52 Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Culpa distinctio eveniet nostrum sapiente assumenda nobis quam amet iure
+            doloremque asperiores repellendus eligendi dicta voluptates, itaque enim error unde temporibus quod! Dolorem
+            nullcere sapiente porro.lorem52 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio
+            eveniet nostrum sapiente assumenda nobis quam amet iure doloremque asperiores repellendus eligendi dicta
+            voluptates, itaque enim error unde temporibus quod! Dolorem null llendus eligendi dicta voluptates, itaque
+            enim error unde temporibus quod! Dolorem nulla voluptatem error voluptate eveniet, rerum aliquid
+            consequuntur quidem quam, delectus libero reiciendis.</p>
+
+        <button id="btn" onclick="function_name()">Hide/Show </button>
+        <!-- defineing function on clicking -->
+
+
+    </div>
+
+    <script>
+
+// Using Event Listner *******************************************************
+
+let para = document.getElementById('para')
+
+para.addEventListener('mouseover',function tun(){
+    
+console.log('Mouse Inside')
+}
+) 
+
+para.addEventListener('mouseout',function fun(){
+
+console.log('Mouse outside')
+} )
+
+
+
+para.addEventListener('mouseover',function clr(){
+
+para.style.color = 'blue';
+
+})
+
+para.addEventListener('mouseout',function clrt(){
+
+para.style.color = 'black';
+
+})
+
+heading.addEventListener('mouseover',function txtin(){
+
+heading.innerHTML = 'H \n E \n A \n D \n I \n N \n G'
+})
+
+heading.addEventListener('mouseout',function txtout(){
+
+heading.innerHTML = 'HEADING'
+}
+)
+
+
+
+
+// now telling to function what to do if it is clicked
+        function function_name() {
+
+            // let btn = document.getElementById('btn');
+            // let para = document.getElementById('para');
+
+            if (para.style.display != 'none') {     // !=  is not Equal
+                para.style.display = 'none';
+
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

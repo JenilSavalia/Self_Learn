@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+</head>
+<body>
+  <form id="queryForm" onsubmit="handleSubmit(event);">
+
+    <input type="text" id="midInput" name="mid" required placeholder="MID">
+    
+
+    <select id="branch" name="option" required>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      var mid = document.getElementById('midInput').value;
+      var branch = document.getElementById('branch').value;
+      var url = 'https://gurukul.ninja/result?mid=' + encodeURIComponent(mid) + '&branch=' + encodeURIComponent(branch);
+      
+      // Redirect the browser to the queried URL
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            background-color: aquamarine;
+            text-align: center;
+            font-size: 40px;
+            display: none;
+        }
+
+        @media only screen and (min-width:375px) and (max-width:425px) {
+            #box_1 {
+                display: block;
+
+                background-color: azure;
+            }
+        }
+
+        @media only screen and (min-width:426px) and (max-width:768px) {
+            #box_2 {
+                display: block;
+                background-color: blanchedalmond;
+            }
+        }
+        @media only screen and (min-width:769px) and (max-width:1024px) {
+            #box_3 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+        @media only screen and (min-width:1025px) and (max-width:1440px) {
+            #box_4 {
+                display: block;
+                background-color: rosybrown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box_1">This is M_Mobile Screen</div>
+    <div class="box" id="box_2">This is L_Mobile Screen</div>
+    <div class="box" id="box_3">This is Tablet Screen</div>
+    <div class="box" id="box_4">This is Laptop Screen</div>
+</body>
+
+</html>

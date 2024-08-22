@@ -1,0 +1,87 @@
+body {
+    /* background-color: rgb(145, 155, 155); */
+}
+
+
+/* Utility Class */
+.primary_header {
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+    margin: 2px 14px;
+}
+
+.secondary_header {
+    font-size: 1.50rem;
+}
+
+
+
+
+/* Navigation Section */
+
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul {
+    justify-content: center;
+}
+
+#navbar ul li a {
+    font-size: 1.3rem;
+}
+
+#navbar img {
+    width: 127px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Home Section */
+
+#home {
+    height: 516px;
+}
+
+#home p {
+    margin: 18px 2px;
+    font-size: 1rem;
+}
+
+#home::before {
+    height: 530px;
+    position: absolute;
+    top: 76px;
+    left: 0px;
+}
+
+
+/* Characters Section */
+
+#cast-section {}
+
+#cast-section .cast img{
+    width: 220px;
+
+}
+
+#cast-section .cast h2 {
+    margin-top: 16px;
+}
+
+/* Media Rights Section */
+
+#media_rights {}
+
+#media_rights .media {
+    flex-wrap: wrap;
+}
+
+.media img {
+    width: 150px;
+}

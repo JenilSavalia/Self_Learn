@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        Simple si HTMl
+    </div>
+
+    <script>
+
+        //----------------------------------------------------------------- FUNCTIONS in Java Script -------------------------------------------------------------------------------
+
+
+//         A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+
+// The parentheses may include parameter names separated by commas:
+// (parameter1, parameter2, ...)
+
+// The code to be executed, by the function, is placed inside curly brackets: {}
+
+
+
+
+
+
+        function greet(name) {
+            console.log('Good Morning' + ' ' + name)
+        }
+
+
+        let name = 'PiluPao'
+        let name1 = 'PiluPao1'
+        let name2 = 'PiluPao2'
+
+        greet(name)
+        greet(name1)
+        greet(name2)
+
+        //--------------------------------------
+
+        function sums(a, b, c) {
+            d = a + b + c
+            console.log('Sum a+b+c is ' + d)
+        }
+
+        sums(5, 6, 8)
+
+        //----------------------------------------------------------------------
+        function Enter(Num) {
+
+            if (Num == 56) {
+                console.log('Yayy!! You Did it')
+            }
+
+            else if (Num < 60) {
+                console.log('Keep trying - you are near the target')
+            }
+            else if (Num > 70) {
+                console.log('Keep trying - Wrong Guess')
+            }
+
+        }
+
+        Enter(59)
+
+        //----------------------------------------------------------------------
+
+        function Enter(Num) {
+
+            if (Num == 56) {
+                return 'Yayy!! You Did it'
+            }
+
+            else if (Num < 60) {
+                return 'Keep trying - you are near the target'
+            }
+            else if (Num > 70) {
+                return 'Keep trying - Wrong Guess'
+            }
+
+        }
+
+        let myoutput = Enter(56)
+        console.log(myoutput)
+
+
+        // The return value is "returned" back to the "caller"
+        // Accessing a function without () returns the function and not the function result.
+
+
+
+        //-----------------------------------------------------------------------------
+
+        function value(a,b){
+            
+            if (a>b){
+                return 'a is greater then b ' 
+            }
+            else if(a<b){
+                return 'b is greater then a'
+            }
+            else if (a==b){
+                return 'a is equal to b'
+            }
+        }
+
+        let input_output = value(157,715)
+        console.log(input_output)
+
+        //-------------------------------------------------------------------------------------------
+    </script>
+</body>
+
+</html>

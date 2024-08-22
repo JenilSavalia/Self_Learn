@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        This is my container
+        and i am typing through asdf jkl; keyboard fast typing and i will learn it quickly
+    </div>
+
+
+    <script>
+        let myobj = {
+            name: 'Jenil',
+            Channels: '.js',
+            Friend: 'Pilupao',
+        }
+        console.log(myobj)
+
+        // Converting Object to String Using JSON
+        //  JSON.stringify(objectname)
+
+        let jsonstr = JSON.stringify(myobj)
+        console.log(jsonstr)
+
+        jsonstr = jsonstr.replace('Jenil', 'Fenil')
+        console.log(jsonstr)
+
+
+        // Converting String to Object
+        // JSON.parse(name)
+        let newjson = JSON.parse(jsonstr)
+        console.log(newjson)
+    </script>
+</body>
+
+</html>

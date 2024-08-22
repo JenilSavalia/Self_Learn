@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+function hello(){
+    console.log('Jay Swaminarayan')
+}
+hello()
+
+//Shortcut ______ Arow function______________
+
+hello = ()=>{
+    console.log('Jay Swaminarayan')
+}
+hello()
+
+
+//---------------------------------------------
+
+let sum = (a,b)=>{
+    return a+b;
+}
+
+let sum1 = a =>{
+    return a + ' is good' ;
+}
+
+
+
+
+
+        //============================================================================
+
+        let myobject = {
+            message: 'Jay Swaminarayan',
+            names: ['pilu', 'bittu', 'hu Vima'],
+
+            iwanttooshow() {
+                this.names.forEach((xyz) => {
+                    console.log(this.message + 'Hello Dear Baccha Party ' + xyz);
+                })
+            }
+        }
+//With arrow functions the this keyword always represents the object that defined the arrow function.
+
+
+        myobject.iwanttooshow()
+
+        //============================================================================
+
+        let myobject1 = {
+            message: 'Jay Swaminarayan',
+            names: ['pilu', 'bittu', 'hu Vima'],
+
+            iwanttooshow() {
+                this.names.forEach(function Hello(xyz) {
+                    console.log(this.message + 'Hello Dear Baccha Party ' + xyz);
+                })
+            }
+        }
+
+        myobject1.iwanttooshow()
+
+
+
+    </script>
+</body>
+
+</html>

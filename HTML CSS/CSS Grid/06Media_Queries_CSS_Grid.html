@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Css Grid</title>
+
+    <style>
+      
+        .item {
+            background-color: rgb(255, 238, 0);
+            border: 3px solid gray;
+            padding: 25px;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-gap: 1.8rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        @media (min-width: 800px) {
+        body {
+            background-color: green;
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+        body {
+            background-color: yellow;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item">
+            HOME CONTACT-US ABOUT-US Downloads
+        </nav>
+        <section class="item">
+            <h2>Welcome to Section</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid consectetur dolorum tempora nisi
+                delectus dolorem quod necessitatibus nulla non, officia consequatur velit hic dolore temporibus ut.
+                Beatae eum perspiciatis modi officia! Obcaecati temporibus culpa placeat ad magni enim, debitis animi
+                quas non explicabo sunt odit maxime reprehenderit quae amet nobis nam incidunt! Tenetur sit dolorum
+                deleniti consequatur sunt optio impedit molestias perspiciatis aspernatur consectetur ducimus, repellat
+                molestiae blanditiis quia qui doloremque? Tempore magnam unde quisquam commodi asperiores incidunt
+                perferendis autem, facilis fugit minima pariatur suscipit atque beatae exercitationem nulla iste
+                blanditiis placeat repudiandae eveniet ab deleniti maxime. Labore dolorem, minus obcaecati doloremque
+                reiciendis accusamus eum. Reprehenderit quam soluta, autem dolorum quod corrupti cumque quis expedita
+                eveniet nam repellat! Itaque, ipsam neque temporibus natus beatae dicta soluta voluptatibus repudiandae,
+                atque ipsa architecto id sit nostrum cum voluptates ab. Cupiditate distinctio nobis excepturi,
+                accusamus, cumque commodi est autem quae officia, id incidunt iusto quasi tempore ut pariatur? Dicta
+                voluptatum culpa voluptates! Repellat, odit sunt fuga sequi numquam id fugit ab nulla tempore rerum
+                incidunt culpa, nemo natus excepturi quisquam assumenda facilis. Nobis dolores labore in, facilis natus
+                aliquam unde nulla odit expedita tenetur! Non voluptas repudiandae molestias, consequatur libero porro
+                modi. Aliquam.</p>
+        </section>
+        <aside class="item">
+            <h3>Welcome to aside</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime esse numquam soluta, rerum quas
+                earum, nesciunt eum quos sunt itaque unde aspernatur iure consequuntur atque magnam id, recusandae in.
+                Eaque, est natus velit ipsam vel fugiat sint minus vitae maxime iusto eum, rerum officia necessitatibus
+                atque dolores. Dicta, veniam.</p>
+        </aside>
+        <footer class="item">
+            Copyright Pilupao.com all rights reserved 2024
+        </footer>
+    </div>
+</body>
+
+</html>

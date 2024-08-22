@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container"></div>
+
+
+    <script>
+
+        var str = 'INDIA IS great'
+
+        // First occurence of a substring (returns output in integer)
+        var position = str.indexOf('GREAT')
+        console.log(position)
+
+
+        // Last occurence of a substring
+        var position = str.lastIndexOf('I')
+        console.log(position)
+
+
+        // Substring from a string
+        var substr = str.slice(0, 5)   // counting in slice starts from 0,1,2,........
+
+        console.log(substr)
+        var substr = str.substr(1, 5)  // counting in substr works on length (it conunt lenngth unit) 
+        console.log(substr)
+
+
+
+        // Replacing substinrg in  a string
+
+        var replace = str.replace('INDIA', 'Pilupao')
+        console.log(replace)
+
+
+        // Uppar Case and Lower Case 
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+
+        // Concat Function to join strings------------------or can use + operator to concat strings
+
+        var string2 = str.concat(' and Jay Swaminarayan ')
+        console.log(string2)
+
+        // Trim Function in Java Script ------> Trims white spaces form start and end of string
+
+        //---------------------------*small tip*-----------------------------------------------------
+        // **************   Guys you can also declare variables without using the  var keyword   *****************
+
+        whitespaces = '    This Contains White Spaces     '
+        console.log(whitespaces)
+        console.log(whitespaces.trim())
+
+
+        // Extracting Character from String using index
+        console.log(str[6])
+
+
+
+    </script>
+</body>
+
+</html>

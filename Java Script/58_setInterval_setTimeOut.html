@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Heading</h1>
+    </div>
+
+
+    <script>
+
+
+
+
+        //setTimeout ---> allow us to run the function once after the interval of time. 
+        //setInterval -->allow us to run the function repeatedly after the interval of time
+
+        function hello(name, MID) {
+            console.log('Jay Swaminarayan, ' + name + ' your ID is ' + MID)
+        }
+
+        setTimeout(hello, 2000, 'Jenil', 'AB9642')
+        // note : Parenthesis is Not included in setTimeout function
+
+        let interval = setInterval(hello,1000,'name','MID');
+        clearInterval(interval) // Clears The setInterval..............
+
+
+
+        
+    </script>
+</body>
+
+</html>

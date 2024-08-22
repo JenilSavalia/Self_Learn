@@ -1,0 +1,15 @@
+{
+  "name": "06_express",
+  "version": "1.0.0",
+  "description": "Jay Swaminarayan",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jenil",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}

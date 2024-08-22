@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My First Form</h1>
+    <form action="backend.php">
+
+        <label for="MID">MID:</label>
+
+        <input type="text" id="MID">
+
+        <br><br>
+        <div>
+            Name: <input type="text">
+        </div>
+        <div>
+            <br>
+            Role: <input type="text">
+        </div>
+        <br>
+        <div>
+            DOJ: <input type="date">
+        </div>
+        <br>
+        <div>
+            Section: Aqua <input type="radio" name="Sec">
+            Berry <input type="radio" name="Sec">
+        </div>
+        <br>
+        <label for="Available">Available </label>
+
+        <input type="checkbox" name="Available" id="Available" checked>
+
+        <br><br>
+        <label for="Write about yourself">Write about yourself</label>
+        <div>
+            <br>
+            <textarea name="mytext" rows="10" cols="50" id=""></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="Position"> Position:</label>
+        </div>
+            <select name="Position" id="Position">
+                <option value="SC">School Captain</option>
+                <option value="SVC">School Vice Captain</option>
+                <option value="HC" selected>Any House Captain</option>
+            </select>
+        
+        <br><br>
+        <div>
+            <input type="submit" Value="Submit Now">
+            <input type="reset" Value="reset">
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>

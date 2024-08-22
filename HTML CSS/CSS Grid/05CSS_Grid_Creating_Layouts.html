@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_areas</title>
+    <style>
+.container{
+    display: grid;
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer';
+    grid-gap: 2rem;
+}
+
+.item{
+background-color: beige;
+border: 2px solid bisque;
+}
+
+#navbar{
+    grid-area: navbar;
+}
+#aside{
+    grid-area: aside;
+}
+#section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item"> Home About Us Downloads Contact Us</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil ut modi accusamus facere voluptatibus voluptatem delectus quidem enim veritatis eveniet.</div>
+        <div id="section" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora explicabo numquam odio nam recusandae fugiat, consequuntur doloribus ad quidem nisi hic quo quasi iure, accusantium nemo necessitatibus ullam inventore vel? Labore dolor perspiciatis voluptate. Omnis consequatur neque animi laboriosam saepe veritatis laborum quibusdam! Rem blanditiis deleniti libero expedita numquam molestias, a neque labore at minima quod, itaque iusto voluptatum dolore porro maiores reiciendis excepturi consectetur ut soluta earum nemo voluptatibus sapiente? Illo minima dolorum alias id dignissimos, repudiandae corrupti sapiente sequi, incidunt quos consequatur inventore repellat assumenda voluptates eaque commodi dicta? Dicta sint illo porro, ullam iusto odit quaerat doloribus blanditiis quos at eum assumenda totam rerum vero culpa accusantium illum fuga! Quaerat distinctio odio, facere dolores eveniet rem asperiores perferendis nihil incidunt nemo corporis! Architecto excepturi praesentium quod nulla hic accusantium dolorum, odit, amet illum, quia qui ipsam recusandae? Molestias quae laborum consequatur sunt quis pariatur tempora facilis obcaecati deleniti repellendus nisi quidem voluptateilique, perspiciatis soluta natus voluptatem qui adipisci alias! Ea possimus aspernatur ducimus doloremque dolore quasi. Nihil magni rerum, earum optio, quam sunt blanditiis voluptatibus odit doloremque consequatur error. Veritatis aspernatur quasi porro odio fugit impedit iure commodi quis, neque id dignissimos, sed dolores libero nulla officiis! Cumque iusto sed deleniti velit magnam, beatae libero provident dignissimos distinctio sint mollitia necessitatibus, et fugiat quod. Magni porro laborum iste maxime et hic libero sint at earum iusto commodi adipisci, aliquid consectetur soluta accusamus incidunt nostrum minus inventore veritatis! Ea fugit blanditiis expedita unde, a modi accusantium eaque aliquid harum, laborum incidunt eos cumque reiciendis. Officiis, pariatur soluta.</div>
+    </div>
+    <footer class="item">Copyright jenilsavalia.com 2024</footer>
+</body>
+</html>
