@@ -10,24 +10,20 @@
 </head>
 
 <body>
+    <script src="login.js"></script>
     <div id="container">
-
-
         <div id="inner_container">
-
-
-
             <img id="user" src="user.png" alt="User login">
 
-            <img id="logo" src="logo.png" alt="Welcome to gResults">
+            <img id="logo" src="gResults_logo.png" alt="Welcome to gResults">
             <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Login</div>
 
 
 
-            <form action="backend.php">
+            <form name="credentials">
                 <div>
                     <label for="MID"></label>
-                    <input type="text" id="data_box" placeholder="MID">
+                    <input type="text" id="ID" placeholder="MID" name="memberid">
                 </div>
 
                 <div>
@@ -42,7 +38,7 @@
                 </div>
 
                 <div>
-                    <a class="btn" href="https://gurukul.ninja/result/">Login</a>
+                    <a class="btn" href="#" onclick="loginfunction()">Login</a>
                 </div>
 
             </form>

@@ -17,11 +17,105 @@
 
 }
 
+/* DISPLAY_PAGE */
+
+#DISPLAY_PAGE {
+    display: none;
+}
+
+/* INFOGRAPHICS */
+
+.info {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.percentage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
 
 
 
+/* ------ LOGIN PAGE CSS ------------- */
 
 
+
+#inner_container {
+    background-color: rgba(171, 184, 195, 0.3);
+    width: 382px;
+    height: 583px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: -3px 3px 22px -12px black;
+
+}
+#inner_container:hover{
+    box-shadow:  2px 3px 20px -10px black;
+    transition: 0.7s
+}
+
+#logo {
+    width: 13rem;
+}
+
+
+#user {
+    width: 8rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    margin: 11px;
+    margin-bottom: 0px;
+    padding: 10px;
+    padding-right: 127px;
+    border: 2px solid;
+}
+
+form select {
+    margin: 11px;
+    padding: 9px;
+    padding-right: 186px;
+}
+
+
+.data_box {
+    border: 1px solid gray;
+    border-radius: 8px;
+    
+}
+
+.btn {
+    background-color: #CC0000;
+    padding: 8px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    width: 288px;
+    display: block;
+    margin-left: 11px;
+    margin-top: 10.5px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 /* Result Container ---------- CSS Design------------------------------>>>>>>>>>>>>>> */
@@ -114,7 +208,7 @@
 }
 
 .pass {
-    background-color: rgba(149, 149, 149, 0.2);
+    background-color: rgb(209 209 209 / 20%);
     color: #CC0000;
     font-family: 'Zapt_bold';
     font-size: 1.5rem;
@@ -124,7 +218,7 @@
 }
 
 .total_marks {
-    background-color: rgba(149, 149, 149, 0.2);
+    background-color: rgb(209 209 209 / 20%);
     color: #CC0000;
     font-family: 'Zapt_bold';
     font-size: 2rem;
@@ -139,7 +233,7 @@
 }
 
 .infograph {
-    background-color: rgba(149, 149, 149, 0.2);
+    background-color: rgb(209 209 209 / 20%);
     color: #CC0000;
     font-family: 'Zapt_bold';
     font-size: 2rem;
@@ -162,7 +256,11 @@
     width: 300px;
     margin-top: 10.5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: grabbing;
+}
 
+.download:hover{
+    background-color: #bb0505;
 }
 
 .btn {
@@ -212,12 +310,17 @@
 }
 
 
+/* Pressed/active state style */
+
+
+
 .btn:hover {
     background-color: #8b8b8b;
 }
 
 .btn:focus {
     background-color: #CC0000;
+    outline: none;
 }
 
 .btn_long:hover {
@@ -268,8 +371,8 @@
 .std_img img {
     width: 150px;
     margin-top: 20px;
-    
-    
+
+
 }
 
 .std_info {
@@ -283,7 +386,8 @@
     font-family: 'zapt';
     font-size: 1.3rem;
 }
-.mid{
+
+.mid {
     color: #CC0000;
     font-family: 'Zapt_bold';
 }
